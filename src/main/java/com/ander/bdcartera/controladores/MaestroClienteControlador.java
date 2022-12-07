@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/ander/MaestroCliente")
+@RequestMapping("api/ander/maestro")
 public class MaestroClienteControlador {
 
     @Autowired
@@ -27,16 +27,17 @@ public class MaestroClienteControlador {
         }
     }
 
-    @GetMapping("{/nit}")
-    public ResponseEntity<?> buscarPorNit(@PathVariable String nit){
+    @GetMapping("/{nit}")
+    public ResponseEntity<?> buscarPorNit(String nit){
         try{
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(maestroClienteServicio.buscarPorNit(nit));
+
         }catch (Exception error){
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
-                    .body("{mensaje: datos no encontrados}");
+                    .body("{mensaje: Datos no encontardos}");
         }
     }
 }

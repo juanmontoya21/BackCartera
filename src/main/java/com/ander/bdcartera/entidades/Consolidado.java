@@ -1,13 +1,12 @@
 package com.ander.bdcartera.entidades;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Date;
+
 
 @Entity
 @Table(name = "consolidado")
@@ -109,7 +108,20 @@ public class Consolidado implements Serializable{
     @Column(name = "Gananciaperdida")
     private Double GananciaPerdida;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "fk_maestroCliente", referencedColumnName = "nit")
+    private MaestroCliente maestroCliente;
+
+
     public Consolidado() {
+    }
+
+    public MaestroCliente getMaestroCliente() {
+        return maestroCliente;
+    }
+
+    public void setMaestroCliente(MaestroCliente maestroCliente) {
+        this.maestroCliente = maestroCliente;
     }
 
     public String getNit() {

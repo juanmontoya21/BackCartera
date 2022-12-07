@@ -1,9 +1,12 @@
 package com.ander.bdcartera.entidades;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "maestrocliente")
@@ -25,7 +28,19 @@ public class MaestroCliente implements Serializable {
     @Column(name = "clpperfil")
     private String clpPerfil;
 
+    @OneToMany(mappedBy = "nit")
+    @JsonManagedReference
+    private List<Consolidado> consolidados=new ArrayList<>();
+
     public MaestroCliente() {
+    }
+
+    public List<Consolidado> getConsolidados() {
+        return consolidados;
+    }
+
+    public void setConsolidados(List<Consolidado> consolidados) {
+        this.consolidados = consolidados;
     }
 
     public String getNit() {
