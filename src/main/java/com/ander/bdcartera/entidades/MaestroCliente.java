@@ -12,7 +12,7 @@ import java.util.List;
 @Table(name = "maestrocliente")
 public class MaestroCliente implements Serializable {
 
-    @Id
+
     @Column(name = "nit")
     private String nit;
     @Column(name = "nombrecliente")
@@ -28,11 +28,23 @@ public class MaestroCliente implements Serializable {
     @Column(name = "clpperfil")
     private String clpPerfil;
 
-    @OneToMany(mappedBy = "nit")
+    @Id
+    @Column(name = "id")
+    private String id;
+
+    @OneToMany(mappedBy = "id")
     @JsonManagedReference
     private List<Consolidado> consolidados=new ArrayList<>();
 
     public MaestroCliente() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public List<Consolidado> getConsolidados() {

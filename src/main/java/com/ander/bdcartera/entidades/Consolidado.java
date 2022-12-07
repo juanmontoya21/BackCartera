@@ -3,7 +3,6 @@ package com.ander.bdcartera.entidades;
 
 
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -12,7 +11,7 @@ import java.util.Date;
 @Table(name = "consolidado")
 public class Consolidado implements Serializable{
 
-    @Id
+
     @Column(name = "nit")
     private String nit;
     @Column(name = "fechadecorte")
@@ -65,7 +64,7 @@ public class Consolidado implements Serializable{
     private Double totalPasivo;
     @Column(name = "capitalemitido")
     private Double capitalEmitido;
-    @Column(name = "otrasaprticipacionesenelpatrimonio")
+    @Column(name = "otrasparticipacionesenelpatrimonio")
     private Double otrasParticipacionesEnElPatrimonio;
     @Column(name = "otrasreservas")
     private Double otrasReservas;
@@ -107,22 +106,27 @@ public class Consolidado implements Serializable{
     private Double GananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
     @Column(name = "Gananciaperdida")
     private Double GananciaPerdida;
+    @Id
+    @Column(name = "id")
+    private String id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "fk_maestroCliente", referencedColumnName = "nit")
-    private MaestroCliente maestroCliente;
+    //@ManyToOne(optional = false)
+    //@JoinColumn(name = "fk_maestroCliente", referencedColumnName = "nit")
+    //private MaestroCliente maestroCliente;
 
 
     public Consolidado() {
     }
 
-    public MaestroCliente getMaestroCliente() {
-        return maestroCliente;
+    public String getId() {
+        return id;
     }
 
-    public void setMaestroCliente(MaestroCliente maestroCliente) {
-        this.maestroCliente = maestroCliente;
+    public void setId(String id) {
+        this.id = id;
     }
+
+
 
     public String getNit() {
         return nit;
