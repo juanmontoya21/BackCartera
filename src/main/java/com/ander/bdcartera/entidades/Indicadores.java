@@ -14,29 +14,29 @@ public class Indicadores {
     private String nit;
     @Column(name = "ano")
     private String Ano;
-    @Column(name = "kDeWventas")
+    @Column(name = "kDeWVentas")
     private Double kDeWVentas;
-    @Column(name = "capitaldetrabajo")
+    @Column(name = "capitalDeTrabajo")
     private Double capitalDeTrabajo;
-    @Column(name = "razoncorriente")
+    @Column(name = "razonCorriente")
     private Double razonCorriente;
-    @Column(name = "pruebaacida")
+    @Column(name = "pruebaAcida")
     private Double pruebaAcida;
-    @Column(name = "diasinventario")
+    @Column(name = "diasInventario")
     private Double diasInventario;
-    @Column(name = "diascartera")
+    @Column(name = "diasCartera")
     private Double diasCartera;
-    @Column(name = "diasproveedores")
+    @Column(name = "diasProveedores")
     private Double diasProveedores;
-    @Column(name = "endeudamientototal")
+    @Column(name = "endeudamientoTotal")
     private Double endeudamientoTotal;
-    @Column(name = "endeudamientofinanciero")
+    @Column(name = "endeudamientoFinanciero")
     private Double endeudamientoFinanciero;
-    @Column(name = "margenbruto")
+    @Column(name = "margenBruto")
     private Double margenBruto;
-    @Column(name = "margenoperacional")
+    @Column(name = "margenOperacional")
     private Double margenOperacional;
-    @Column(name = "margenneto")
+    @Column(name = "margenNeto")
     private Double margenNeto;
 
     @Id

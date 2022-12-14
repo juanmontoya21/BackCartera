@@ -15,17 +15,17 @@ public class MaestroCliente implements Serializable {
 
     @Column(name = "nit")
     private String nit;
-    @Column(name = "nombrecliente")
+    @Column(name = "nombreCliente")
     private String nombreCliente;
-    @Column(name = "fechaantiguedad")
+    @Column(name = "fechaAntiguedad")
     private Date fechaAntiguedad;
-    @Column(name = "terminogeneral")
+    @Column(name = "terminoGeneral")
     private String terminoGeneral;
-    @Column(name = "cupocredito")
+    @Column(name = "cupoCredito")
     private Double cupoCredito;
-    @Column(name = "clasificacioncliente")
-    private String ClasificacionCliente;
-    @Column(name = "clpperfil")
+    @Column(name = "clasificacionCliente")
+    private String clasificacionCliente;
+    @Column(name = "clpPerfil")
     private String clpPerfil;
 
     @Id
@@ -96,11 +96,11 @@ public class MaestroCliente implements Serializable {
     }
 
     public String getClasificacionCliente() {
-        return ClasificacionCliente;
+        return clasificacionCliente;
     }
 
     public void setClasificacionCliente(String clasificacionCliente) {
-        ClasificacionCliente = clasificacionCliente;
+        this.clasificacionCliente = clasificacionCliente;
     }
 
     public String getClpPerfil() {

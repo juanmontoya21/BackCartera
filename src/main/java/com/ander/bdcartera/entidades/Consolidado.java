@@ -14,98 +14,100 @@ public class Consolidado implements Serializable{
 
     @Column(name = "nit")
     private String nit;
-    @Column(name = "fechadecorte")
+    @Column(name = "fechaDeCorte")
     private Date fechaDeCorte;
-    @Column(name = "efectivoyequivalentesalefectivo")
+    @Column(name = "efectivoYEquivalentesAlEfectivo")
     private Double efectivoYEquivalentesAlEfectivo;
-    @Column(name = "cuentascomercialesporcobraryotrascuentasporcobrarCorrientes")
+    @Column(name = "cuentasComercialesPorCobrarYOtrasCuentasPorCobrarCorrientes")
     private Double cuentasComercialesPorCobrarYOtrasCuentasPorCobrarCorrientes;
-    @Column(name = "inventarioscorrientes")
+    @Column(name = "inventariosCorrientes")
     private Double inventariosCorrientes;
-    @Column(name = "activosporimpuestoscorriente")
+    @Column(name = "activosPorImpuestosCorrientesCorriente")
     private Double activosPorImpuestosCorrientesCorriente;
-    @Column(name = "otrosactivosfinancieroscorrientes")
+    @Column(name = "otrosActivosFinancierosCorrientes")
     private Double otrosActivosFinancierosCorrientes;
-    @Column(name = "otrosactivosnofinancieroscorrientes")
+    @Column(name = "otrosActivosNoFinancierosCorrientes")
     private Double otrosActivosNoFinancierosCorrientes;
-    @Column(name = "activoscorrientestotales")
+    @Column(name = "activosCorrientesTotales")
     private Double activosCorrientesTotales;
-    @Column(name = "propiedadesplantayequipo")
+    @Column(name = "propiedadesPlantaYEquipo")
     private Double propiedadesPlantaYEquipo;
-    @Column(name = "activosintagiblesdistintosdelplusvalia")
+    @Column(name = "activosIntagiblesDistintosDeLaPlusvalia")
     private Double activosIntagiblesDistintosDeLaPlusvalia;
-    @Column(name = "cuentascomercialesporcobraryotrascuentasporcobrarnocorrientes")
+    @Column(name = "cuentasComercialesPorCobrarYOtrasCuentasPorCobrarNoCorrientes")
     private Double cuentasComercialesPorCobrarYOtrasCuentasPorCobrarNoCorrientes;
-    @Column(name = "activosporimpuestosdiferidos")
+    @Column(name = "activosPorImpuestosDiferidos")
     private Double activosPorImpuestosDiferidos;
-    @Column(name = "otrosactivosnofinancierosnocorrientes")
+    @Column(name = "otrosActivosNoFinancierosNoCorrientes")
     private Double otrosActivosNoFinancierosNoCorrientes;
-    @Column(name = "totaldeactivosnocorrientes")
+    @Column(name = "totalDeActivosNoCorrientes")
     private Double totalDeActivosNoCorrientes;
-    @Column(name = "totaldeactivos")
+    @Column(name = "totalDeActivos")
     private Double totalDeActivos;
-    @Column(name = "cuentasporpagarcomercialesyotrascuentasporpagar")
+    @Column(name = "cuentasPorPagarComercialesYOtrasCuentasPorPagar")
     private Double cuentasPorPagarComercialesYOtrasCuentasPorPagar;
-    @Column(name = "otrospasivosfinancieroscorrientes")
+    @Column(name = "otrosPasivosFinancierosCorrientes")
     private Double otrosPasivosFinancierosCorrientes;
-    @Column(name = "otrospasivosnofinancieroscorrientes")
+    @Column(name = "otrosPasivosNoFinancierosCorrientes")
     private Double otrosPasivosNoFinancierosCorrientes;
-    @Column(name = "pasivoscorrientestotales")
+    @Column(name = "pasivosCorrientesTotales")
     private Double pasivosCorrientesTotales;
-    @Column(name="Cuentascomercialesporpagaryotrascuentasporpagarnocorrientes")
+    @Column(name="CuentasComercialesPorPagarYOtrasCuentasPorPagarNoCorrientes")
     private Double CuentasComercialesPorPagarYOtrasCuentasPorPagarNoCorrientes;
-    @Column(name = "pasivoporimpuestosdiferidos")
+    @Column(name = "pasivoPorImpuestosDiferidos")
     private Double pasivoPorImpuestosDiferidos;
-    @Column(name = "otrospasivosfinancierosnocorrientes")
+    @Column(name = "otrosPasivosFinancierosNoCorrientes")
     private Double otrosPasivosFinancierosNoCorrientes;
-    @Column(name = "totaldepasivosnocorrientes")
+    @Column(name = "totalDePasivosNoCorrientes")
     private Double totalDePasivosNoCorrientes;
-    @Column(name = "totalpasivo")
+    @Column(name = "totalPasivo")
     private Double totalPasivo;
-    @Column(name = "capitalemitido")
+    @Column(name = "capitalEmitido")
     private Double capitalEmitido;
-    @Column(name = "otrasparticipacionesenelpatrimonio")
+    @Column(name = "otrasParticipacionesEnElPatrimonio")
     private Double otrasParticipacionesEnElPatrimonio;
-    @Column(name = "otrasreservas")
+    @Column(name = "otrasReservas")
     private Double otrasReservas;
-    @Column(name = "gananciasacumuladas")
+    @Column(name = "gananciasAcumuladas")
     private Double gananciasAcumuladas;
-    @Column(name = "patrimoniototal")
+    @Column(name = "patrimonioTotal")
     private Double patrimonioTotal;
-    @Column(name = "totaldepatrimonioypasivos")
+    @Column(name = "totalDePatrimonioYPasivos")
     private Double totalDePatrimonioYPasivos;
     @Column(name = "ano")
     private String ano;
-    @Column(name = "tipodeempresa")
+    @Column(name = "tipoDeEmpresa")
     private String tipoDeEmpresa;
-    @Column(name = "ingresodeactividadesOrdinales")
+    @Column(name = "ingresoDeActividadesOrdinales")
     private Double ingresoDeActividadesOrdinales;
-    @Column(name = "costodeventas")
+    @Column(name = "costoDeVentas")
     private Double costoDeVentas;
-    @Column(name = "gananciabruta")
+    @Column(name = "gananciaBruta")
     private Double gananciaBruta;
-    @Column(name = "otrosingresos")
+    @Column(name = "otrosIngresos")
     private Double otrosIngresos;
-    @Column(name = "gastosdeadministracion")
+    @Column(name = "gastosDeAdministracion")
     private Double gastosDeAdministracion;
-    @Column(name = "otrosgastos")
+    @Column(name = "otrosGastos")
     private Double otrosGastos;
-    @Column(name = "gananciaperdidaporactividadesdeoperacion")
+    @Column(name = "gananciaPerdidaPorActividadesDeOperacion")
     private Double gananciaPerdidaPorActividadesDeOperacion;
-    @Column(name = "Ingresosfinancieros")
-    private Double IngresosFinancieros;
-    @Column(name = "Costosfinancieros")
-    private Double CostosFinancieros;
-    @Column(name = "Gananciaperdidaantesdeimpuestos")
-    private Double GananciaPerdidaAntesDeImpuestos;
-    @Column(name = "Ingresogastoporimpuestos")
-    private Double IngresoGastoPorImpuestos;
-    @Column(name = "Gananciaperdidaprocedentedeoperacionescontinuadas")
-    private Double GananciaPerdidaProcedentedeOperacionesContinuadas;
-    @Column(name = "Gananciaperdidaprocedentedeoperacionesdiscontinuadas")
-    private Double GananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
-    @Column(name = "Gananciaperdida")
-    private Double GananciaPerdida;
+
+    @Column(name = "ingresosFinancieros")
+    private Double ingresosFinancieros;
+
+    @Column(name = "costosFinancieros")
+    private Double costosFinancieros;
+    @Column(name = "gananciaPerdidaAntesDeImpuestos")
+    private Double gananciaPerdidaAntesDeImpuestos;
+    @Column(name = "ingresoGastoPorImpuestos")
+    private Double ingresoGastoPorImpuestos;
+    @Column(name = "gananciaPerdidaProcedentedeOperacionesContinuadas")
+    private Double gananciaPerdidaProcedentedeOperacionesContinuadas;
+    @Column(name = "gananciaPerdidaprocedenteDeOperacionesDiscontinuadas")
+    private Double gananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
+    @Column(name = "gananciaPerdida")
+    private Double gananciaPerdida;
     @Id
     @Column(name = "id")
     private String id;
@@ -449,58 +451,58 @@ public class Consolidado implements Serializable{
     }
 
     public Double getIngresosFinancieros() {
-        return IngresosFinancieros;
+        return ingresosFinancieros;
     }
 
     public void setIngresosFinancieros(Double ingresosFinancieros) {
-        IngresosFinancieros = ingresosFinancieros;
+        this.ingresosFinancieros = ingresosFinancieros;
     }
 
     public Double getCostosFinancieros() {
-        return CostosFinancieros;
+        return costosFinancieros;
     }
 
     public void setCostosFinancieros(Double costosFinancieros) {
-        CostosFinancieros = costosFinancieros;
+        this.costosFinancieros = costosFinancieros;
     }
 
     public Double getGananciaPerdidaAntesDeImpuestos() {
-        return GananciaPerdidaAntesDeImpuestos;
+        return gananciaPerdidaAntesDeImpuestos;
     }
 
     public void setGananciaPerdidaAntesDeImpuestos(Double gananciaPerdidaAntesDeImpuestos) {
-        GananciaPerdidaAntesDeImpuestos = gananciaPerdidaAntesDeImpuestos;
+        this.gananciaPerdidaAntesDeImpuestos = gananciaPerdidaAntesDeImpuestos;
     }
 
     public Double getIngresoGastoPorImpuestos() {
-        return IngresoGastoPorImpuestos;
+        return ingresoGastoPorImpuestos;
     }
 
     public void setIngresoGastoPorImpuestos(Double ingresoGastoPorImpuestos) {
-        IngresoGastoPorImpuestos = ingresoGastoPorImpuestos;
+        this.ingresoGastoPorImpuestos = ingresoGastoPorImpuestos;
     }
 
     public Double getGananciaPerdidaProcedentedeOperacionesContinuadas() {
-        return GananciaPerdidaProcedentedeOperacionesContinuadas;
+        return gananciaPerdidaProcedentedeOperacionesContinuadas;
     }
 
     public void setGananciaPerdidaProcedentedeOperacionesContinuadas(Double gananciaPerdidaProcedentedeOperacionesContinuadas) {
-        GananciaPerdidaProcedentedeOperacionesContinuadas = gananciaPerdidaProcedentedeOperacionesContinuadas;
+        this.gananciaPerdidaProcedentedeOperacionesContinuadas = gananciaPerdidaProcedentedeOperacionesContinuadas;
     }
 
     public Double getGananciaPerdidaprocedenteDeOperacionesDiscontinuadas() {
-        return GananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
+        return gananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
     }
 
     public void setGananciaPerdidaprocedenteDeOperacionesDiscontinuadas(Double gananciaPerdidaprocedenteDeOperacionesDiscontinuadas) {
-        GananciaPerdidaprocedenteDeOperacionesDiscontinuadas = gananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
+        this.gananciaPerdidaprocedenteDeOperacionesDiscontinuadas = gananciaPerdidaprocedenteDeOperacionesDiscontinuadas;
     }
 
     public Double getGananciaPerdida() {
-        return GananciaPerdida;
+        return gananciaPerdida;
     }
 
     public void setGananciaPerdida(Double gananciaPerdida) {
-        GananciaPerdida = gananciaPerdida;
+        this.gananciaPerdida = gananciaPerdida;
     }
 }
