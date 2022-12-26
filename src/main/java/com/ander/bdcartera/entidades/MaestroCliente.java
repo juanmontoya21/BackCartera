@@ -32,9 +32,9 @@ public class MaestroCliente implements Serializable {
     @Column(name = "id")
     private String id;
 
-    @OneToMany(mappedBy = "id")
+    /*@OneToMany(mappedBy = "id")
     @JsonManagedReference
-    private List<Consolidado> consolidados=new ArrayList<>();
+    private List<Consolidado> consolidados=new ArrayList<>();*/
 
     public MaestroCliente() {
     }
@@ -47,13 +47,7 @@ public class MaestroCliente implements Serializable {
         this.id = id;
     }
 
-    public List<Consolidado> getConsolidados() {
-        return consolidados;
-    }
 
-    public void setConsolidados(List<Consolidado> consolidados) {
-        this.consolidados = consolidados;
-    }
 
     public String getNit() {
         return nit;
