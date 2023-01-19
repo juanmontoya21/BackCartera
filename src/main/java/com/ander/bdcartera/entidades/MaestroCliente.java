@@ -15,18 +15,18 @@ public class MaestroCliente implements Serializable {
 
     @Column(name = "nit")
     private String nit;
-    @Column(name = "nombreCliente")
-    private String nombreCliente;
-    @Column(name = "fechaAntiguedad")
-    private Date fechaAntiguedad;
-    @Column(name = "terminoGeneral")
-    private String terminoGeneral;
-    @Column(name = "cupoCredito")
-    private Double cupoCredito;
-    @Column(name = "clasificacionCliente")
-    private String clasificacionCliente;
-    @Column(name = "clpPerfil")
-    private String clpPerfil;
+    @Column(name = "nombrecliente")
+    private String nombrecliente;
+    @Column(name = "fechaantiguedad")
+    private Date fechaantiguedad;
+    @Column(name = "terminogeneral")
+    private String terminogeneral;
+    @Column(name = "cupocredito")
+    private Double cupocredito;
+    @Column(name = "clasificacioncliente")
+    private String clasificacioncliente;
+    @Column(name = "clpperfil")
+    private String clpperfil;
 
     @Id
     @Column(name = "id")
@@ -36,19 +36,6 @@ public class MaestroCliente implements Serializable {
     @JsonManagedReference
     private List<Consolidado> consolidados=new ArrayList<>();*/
 
-    public MaestroCliente() {
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-
-
     public String getNit() {
         return nit;
     }
@@ -57,51 +44,59 @@ public class MaestroCliente implements Serializable {
         this.nit = nit;
     }
 
-    public String getNombreCliente() {
-        return nombreCliente;
+    public String getNombrecliente() {
+        return nombrecliente;
     }
 
-    public void setNombreCliente(String nombreCliente) {
-        this.nombreCliente = nombreCliente;
+    public void setNombrecliente(String nombrecliente) {
+        this.nombrecliente = nombrecliente;
     }
 
-    public Date getFechaAntiguedad() {
-        return fechaAntiguedad;
+    public Date getFechaantiguedad() {
+        return fechaantiguedad;
     }
 
-    public void setFechaAntiguedad(Date fechaAntiguedad) {
-        this.fechaAntiguedad = fechaAntiguedad;
+    public void setFechaantiguedad(Date fechaantiguedad) {
+        this.fechaantiguedad = fechaantiguedad;
     }
 
-    public String getTerminoGeneral() {
-        return terminoGeneral;
+    public String getTerminogeneral() {
+        return terminogeneral;
     }
 
-    public void setTerminoGeneral(String terminoGeneral) {
-        this.terminoGeneral = terminoGeneral;
+    public void setTerminogeneral(String terminogeneral) {
+        this.terminogeneral = terminogeneral;
     }
 
-    public Double getCupoCredito() {
-        return cupoCredito;
+    public Double getCupocredito() {
+        return cupocredito;
     }
 
-    public void setCupoCredito(Double cupoCredito) {
-        this.cupoCredito = cupoCredito;
+    public void setCupocredito(Double cupocredito) {
+        this.cupocredito = cupocredito;
     }
 
-    public String getClasificacionCliente() {
-        return clasificacionCliente;
+    public String getClasificacioncliente() {
+        return clasificacioncliente;
     }
 
-    public void setClasificacionCliente(String clasificacionCliente) {
-        this.clasificacionCliente = clasificacionCliente;
+    public void setClasificacioncliente(String clasificacioncliente) {
+        this.clasificacioncliente = clasificacioncliente;
     }
 
-    public String getClpPerfil() {
-        return clpPerfil;
+    public String getClpperfil() {
+        return clpperfil;
     }
 
-    public void setClpPerfil(String clpPerfil) {
-        this.clpPerfil = clpPerfil;
+    public void setClpperfil(String clpperfil) {
+        this.clpperfil = clpperfil;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

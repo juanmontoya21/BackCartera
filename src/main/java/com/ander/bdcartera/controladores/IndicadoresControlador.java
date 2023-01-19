@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "api/ander/Indicadores")
+@RequestMapping(name = "api/ander/indicadores")
 public class IndicadoresControlador {
     @Autowired
     IndicadoresServicioImplementacion indicadoresServicio;

@@ -13,31 +13,31 @@ public class Indicadores {
     @Column(name = "nit")
     private String nit;
     @Column(name = "ano")
-    private String Ano;
-    @Column(name = "kDeWVentas")
-    private Double kDeWVentas;
-    @Column(name = "capitalDeTrabajo")
-    private Double capitalDeTrabajo;
-    @Column(name = "razonCorriente")
-    private Double razonCorriente;
-    @Column(name = "pruebaAcida")
-    private Double pruebaAcida;
-    @Column(name = "diasInventario")
-    private Double diasInventario;
-    @Column(name = "diasCartera")
-    private Double diasCartera;
-    @Column(name = "diasProveedores")
-    private Double diasProveedores;
-    @Column(name = "endeudamientoTotal")
-    private Double endeudamientoTotal;
-    @Column(name = "endeudamientoFinanciero")
-    private Double endeudamientoFinanciero;
-    @Column(name = "margenBruto")
-    private Double margenBruto;
-    @Column(name = "margenOperacional")
-    private Double margenOperacional;
-    @Column(name = "margenNeto")
-    private Double margenNeto;
+    private String ano;
+    @Column(name = "kwdeventas")
+    private Double kwdeventas;
+    @Column(name = "capitaldetrabajo")
+    private Double capitaldetrabajo;
+    @Column(name = "razoncorriente")
+    private Double razoncorriente;
+    @Column(name = "pruebaacida")
+    private Double pruebaacida;
+    @Column(name = "diasinventario")
+    private Double diasinventario;
+    @Column(name = "diascartera")
+    private Double diascartera;
+    @Column(name = "diasproveedores")
+    private Double diasproveedores;
+    @Column(name = "endeudamientototal")
+    private Double endeudamientototal;
+    @Column(name = "endeudamientotinanciero")
+    private Double endeudamientofinanciero;
+    @Column(name = "margenbruto")
+    private Double margenbruto;
+    @Column(name = "margenoperacional")
+    private Double margenoperacional;
+    @Column(name = "margenneto")
+    private Double margenneto;
 
     @Id
     @Column(name = "id")
@@ -46,15 +46,6 @@ public class Indicadores {
 
 
     public Indicadores() {
-    }
-
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getNit() {
@@ -66,106 +57,114 @@ public class Indicadores {
     }
 
     public String getAno() {
-        return Ano;
+        return ano;
     }
 
     public void setAno(String ano) {
-        Ano = ano;
+        this.ano = ano;
     }
 
-    public Double getkDeWVentas() {
-        return kDeWVentas;
+    public Double getKwdeventas() {
+        return kwdeventas;
     }
 
-    public void setkDeWVentas(Double kDeWVentas) {
-        this.kDeWVentas = kDeWVentas;
+    public void setKwdeventas(Double kwdeventas) {
+        this.kwdeventas = kwdeventas;
     }
 
-    public Double getCapitalDeTrabajo() {
-        return capitalDeTrabajo;
+    public Double getCapitaldetrabajo() {
+        return capitaldetrabajo;
     }
 
-    public void setCapitalDeTrabajo(Double capitalDeTrabajo) {
-        this.capitalDeTrabajo = capitalDeTrabajo;
+    public void setCapitaldetrabajo(Double capitaldetrabajo) {
+        this.capitaldetrabajo = capitaldetrabajo;
     }
 
-    public Double getRazonCorriente() {
-        return razonCorriente;
+    public Double getRazoncorriente() {
+        return razoncorriente;
     }
 
-    public void setRazonCorriente(Double razonCorriente) {
-        this.razonCorriente = razonCorriente;
+    public void setRazoncorriente(Double razoncorriente) {
+        this.razoncorriente = razoncorriente;
     }
 
-    public Double getPruebaAcida() {
-        return pruebaAcida;
+    public Double getPruebaacida() {
+        return pruebaacida;
     }
 
-    public void setPruebaAcida(Double pruebaAcida) {
-        this.pruebaAcida = pruebaAcida;
+    public void setPruebaacida(Double pruebaacida) {
+        this.pruebaacida = pruebaacida;
     }
 
-    public Double getDiasInventario() {
-        return diasInventario;
+    public Double getDiasinventario() {
+        return diasinventario;
     }
 
-    public void setDiasInventario(Double diasInventario) {
-        this.diasInventario = diasInventario;
+    public void setDiasinventario(Double diasinventario) {
+        this.diasinventario = diasinventario;
     }
 
-    public Double getDiasCartera() {
-        return diasCartera;
+    public Double getDiascartera() {
+        return diascartera;
     }
 
-    public void setDiasCartera(Double diasCartera) {
-        this.diasCartera = diasCartera;
+    public void setDiascartera(Double diascartera) {
+        this.diascartera = diascartera;
     }
 
-    public Double getDiasProveedores() {
-        return diasProveedores;
+    public Double getDiasproveedores() {
+        return diasproveedores;
     }
 
-    public void setDiasProveedores(Double diasProveedores) {
-        this.diasProveedores = diasProveedores;
+    public void setDiasproveedores(Double diasproveedores) {
+        this.diasproveedores = diasproveedores;
     }
 
-    public Double getEndeudamientoTotal() {
-        return endeudamientoTotal;
+    public Double getEndeudamientototal() {
+        return endeudamientototal;
     }
 
-    public void setEndeudamientoTotal(Double endeudamientoTotal) {
-        this.endeudamientoTotal = endeudamientoTotal;
+    public void setEndeudamientototal(Double endeudamientototal) {
+        this.endeudamientototal = endeudamientototal;
     }
 
-    public Double getEndeudamientoFinanciero() {
-        return endeudamientoFinanciero;
+    public Double getEndeudamientofinanciero() {
+        return endeudamientofinanciero;
     }
 
-    public void setEndeudamientoFinanciero(Double endeudamientoFinanciero) {
-        this.endeudamientoFinanciero = endeudamientoFinanciero;
+    public void setEndeudamientofinanciero(Double endeudamientofinanciero) {
+        this.endeudamientofinanciero = endeudamientofinanciero;
     }
 
-    public Double getMargenBruto() {
-        return margenBruto;
+    public Double getMargenbruto() {
+        return margenbruto;
     }
 
-    public void setMargenBruto(Double margenBruto) {
-        this.margenBruto = margenBruto;
+    public void setMargenbruto(Double margenbruto) {
+        this.margenbruto = margenbruto;
     }
 
-    public Double getMargenOperacional() {
-        return margenOperacional;
+    public Double getMargenoperacional() {
+        return margenoperacional;
     }
 
-    public void setMargenOperacional(Double margenOperacional) {
-        this.margenOperacional = margenOperacional;
+    public void setMargenoperacional(Double margenoperacional) {
+        this.margenoperacional = margenoperacional;
     }
 
-    public Double getMargenNeto() {
-        return margenNeto;
+    public Double getMargenneto() {
+        return margenneto;
     }
 
-    public void setMargenNeto(Double margenNeto) {
-        this.margenNeto = margenNeto;
+    public void setMargenneto(Double margenneto) {
+        this.margenneto = margenneto;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
