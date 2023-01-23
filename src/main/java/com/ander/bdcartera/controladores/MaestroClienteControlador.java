@@ -28,11 +28,12 @@ public class MaestroClienteControlador {
     }
 
     @GetMapping("/{nit}")
-    public ResponseEntity<?> buscarPorNit(String nit){
+    public ResponseEntity<?> buscarPorNit(@PathVariable String nit){
         try{
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(maestroClienteServicio.buscarPorNit(nit));
+
 
         }catch (Exception error){
             return ResponseEntity

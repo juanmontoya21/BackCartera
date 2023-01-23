@@ -13,6 +13,10 @@ import java.util.List;
 public class MaestroCliente implements Serializable {
 
 
+    @Id
+    @Column(name = "id")
+    private String id;
+
     @Column(name = "nit")
     private String nit;
     @Column(name = "nombrecliente")
@@ -28,13 +32,15 @@ public class MaestroCliente implements Serializable {
     @Column(name = "clpperfil")
     private String clpperfil;
 
-    @Id
-    @Column(name = "id")
-    private String id;
+
 
     /*@OneToMany(mappedBy = "id")
     @JsonManagedReference
     private List<Consolidado> consolidados=new ArrayList<>();*/
+
+    public MaestroCliente() {
+    }
+
 
     public String getNit() {
         return nit;
