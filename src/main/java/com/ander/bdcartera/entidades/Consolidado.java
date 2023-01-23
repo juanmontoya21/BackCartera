@@ -14,7 +14,6 @@ public class Consolidado implements Serializable{
     @Id
     @Column(name = "id")
     private String id;
-
     @Column(name = "nit")
     private String nit;
     @Column(name = "fechadecorte")
@@ -108,6 +107,9 @@ public class Consolidado implements Serializable{
     @Column(name = "totalpasivomaspatrimonio")
     private Double totalpasivomaspatrimonio;
 
+    @Column(name = "tipodeempresa")
+    private String tipodeempresa;
+
     public Consolidado() {
     }
 
@@ -117,6 +119,22 @@ public class Consolidado implements Serializable{
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Double getTotalpasivocorriente() {
+        return totalpasivocorriente;
+    }
+
+    public void setTotalpasivocorriente(Double totalpasivocorriente) {
+        this.totalpasivocorriente = totalpasivocorriente;
+    }
+
+    public String getTipodeempresa() {
+        return tipodeempresa;
+    }
+
+    public void setTipodeempresa(String tipodeempresa) {
+        this.tipodeempresa = tipodeempresa;
     }
 
     public String getNit() {

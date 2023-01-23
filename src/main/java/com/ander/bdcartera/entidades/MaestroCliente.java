@@ -18,7 +18,7 @@ public class MaestroCliente implements Serializable {
     @Column(name = "nombrecliente")
     private String nombrecliente;
     @Column(name = "fechaantiguedad")
-    private Date fechaantiguedad;
+    private String fechaantiguedad;
     @Column(name = "terminogeneral")
     private String terminogeneral;
     @Column(name = "cupocredito")
@@ -52,11 +52,11 @@ public class MaestroCliente implements Serializable {
         this.nombrecliente = nombrecliente;
     }
 
-    public Date getFechaantiguedad() {
+    public String getFechaantiguedad() {
         return fechaantiguedad;
     }
 
-    public void setFechaantiguedad(Date fechaantiguedad) {
+    public void setFechaantiguedad(String fechaantiguedad) {
         this.fechaantiguedad = fechaantiguedad;
     }
 
